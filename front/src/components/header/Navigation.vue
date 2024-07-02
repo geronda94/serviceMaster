@@ -4,8 +4,9 @@ import NavItem from "./NavItem.vue";
 </script>
 
 <template>
-    <nav>        
-        <NavItem/>
+    <nav class="navigation__menu">        
+        <NavItem name='О нас' />
+        <NavItem name='Цены' :indicator='true' />
             
     </nav>
 </template>
@@ -13,5 +14,8 @@ import NavItem from "./NavItem.vue";
 
 
 <style scoped>
-
+.navigation__menu{
+    display: flex;
+    gap: 10px;
+}
 </style>

@@ -6,11 +6,17 @@ import Navigation from './Navigation.vue'
 </script>
 
 <template>
-<Logo/>
+<header class="header">    
+    <Navigation/>
+    <Logo/>
+</header>
 
     
 </template>
 
 <style scoped>
-
+.header{
+    display: flex;
+    justify-content: space-between;
+}
 </style>

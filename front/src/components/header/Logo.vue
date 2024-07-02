@@ -16,9 +16,9 @@
 .silver-border{
     padding: 5px;
     max-width: 300px;
-    background: linear-gradient(135deg, #f7f7f7, #b7b7b7, #f7f7f7);
+    background: var(--silver-gradient);
     border-radius: 8px;
-    margin:0 auto;
+
 }
 .logo__wrapper{
     background: var(--dark);
@@ -28,6 +28,7 @@
     white-space: nowrap;
     box-sizing: border-box;
     position: relative; 
+    padding:0 10px;
 }
 .logo__text{
     width: 100%;

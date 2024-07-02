@@ -11,5 +11,6 @@
     --dark: #292929;
     --light:#eaeaea;
     --text-shadow: rgba(237, 237, 237, 0.5);
+    --silver-gradient: linear-gradient(135deg, #f7f7f7, #b7b7b7, #f7f7f7);
   }
   
