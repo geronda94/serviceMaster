@@ -18,5 +18,6 @@ import Navigation from './Navigation.vue'
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 </style>

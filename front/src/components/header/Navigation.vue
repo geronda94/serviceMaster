@@ -7,6 +7,7 @@ import NavItem from "./NavItem.vue";
     <nav class="navigation__menu">        
         <NavItem name='О нас' />
         <NavItem name='Цены' :indicator='true' />
+        <NavItem name='Локация' :indicator='false' />
             
     </nav>
 </template>

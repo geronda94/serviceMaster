@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template> 
-    <div class="button__wrapper">   
+    <div :class="['button__wrapper', {'button-indicator':indicator}]">   
         <div class="nav__button">        
             <div class="button__name">{{name}}</div>
             <div :class="['button__indicator', {'button__on': indicator}]"></div>
@@ -26,6 +26,10 @@ const props = defineProps({
     border-radius: 4px;
     height: 42px;
     padding: 1.5px;
+}
+.button-indicator{
+    padding: 2px;
+    height: 43px;
 }
 
 .button__wrapper:hover{cursor: pointer; }
@@ -46,6 +50,7 @@ const props = defineProps({
     color: var(--dark);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .button__indicator{

@@ -46,8 +46,10 @@
     animation: blink 2s infinite;
 }
 @keyframes blink {
-            0%, 90%, 100% { opacity: 1; }
-            91%, 99% { opacity: 0; }
+            0%, 70%, 80% { opacity: 1; }
+            71%, 79% { opacity: .8; }
+            73%, 77% { opacity: .5; }
+            74%, 76% { opacity: 0; }
         }
 
 
