@@ -1,0 +1,15 @@
+@layer base {
+    @font-face {
+      font-family: 'Disp';
+      src: 
+        url('../assets/fonts/DISP.ttf') format('truetype'), /* Safari, Android, iOS */
+         }
+  
+  }
+
+  :root{
+    --dark: #292929;
+    --light:#eaeaea;
+    --text-shadow: rgba(237, 237, 237, 0.5);
+  }
+  
