@@ -1,14 +1,21 @@
 <script setup>
 
+import Contacts from "./Contacts.vue";
 import Logo from "./Logo.vue";
 import Navigation from './Navigation.vue'
+
 
 </script>
 
 <template>
 <header class="header">    
-    <Navigation/>
-    <Logo/>
+    
+    <div class="header__border">
+        <Navigation/>
+        <Logo/>
+        <Contacts />
+    </div>
+    
 </header>
 
     
@@ -16,8 +23,20 @@ import Navigation from './Navigation.vue'
 
 <style scoped>
 .header{
+    position: fixed;
+    width: 100%;
+    padding-bottom:3px;
+    border-radius: 30%;
+    background: var(--light);
+}
+.header__border{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 45px;
+    border-bottom: 3px solid var(--light);
+    
+    background:white;
+    
 }
 </style>

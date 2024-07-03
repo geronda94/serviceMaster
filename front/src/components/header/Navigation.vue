@@ -6,14 +6,14 @@ const activeItem = ref()
 const activateItem =  (nm) => {
     activeItem.value = nm
 }
-const menuItems = ["О нас", "Цены", "Локация"]
+const menuItems = ["О нас", "Цены", "Отзывы"]
 </script>
 
 <template>
-    <nav class="navigation__menu">   
-        <ul v-for="item of menuItems"
+    <nav>   
+        <ul  class="navigation__menu">
+            <li v-for="item of menuItems"
             :key="item">
-            <li>
                 <NavItem 
             @click="activateItem(item)" 
             :name='item' 
