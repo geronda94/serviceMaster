@@ -28,7 +28,7 @@
     white-space: nowrap;
     box-sizing: border-box;
     position: relative; 
-    padding:0 10px;
+    padding:15px 10px;
 }
 .logo__text{
     width: 100%;
