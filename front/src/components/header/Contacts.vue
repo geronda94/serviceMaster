@@ -4,7 +4,7 @@
 
 <template>
     
-        <ul class="contacts">
+        <ul class="contacts header__el" >
             <li>
                 <a href="https://wa.me/+995557256175" class="contact__link" target="_blank">
                     <font-awesome-icon :icon="['fab', 'whatsapp']" />
@@ -13,6 +13,11 @@
             <li>
                 <a href="https://t.me/+995557256175" class="contact__link" target="_blank">
                     <font-awesome-icon :icon="['fab', 'telegram']" />
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com/RomkaMaster" class="contact__link" target="_blank">
+                    <font-awesome-icon :icon="['fab', 'facebook']" />
                 </a>
             </li>
             <li>
@@ -31,9 +36,11 @@
 .contacts{
     display: flex;
     gap: 15px;
+    justify-content: flex-end;
 }
 
 .contact__link{
     font-size: 15pt;
+    color: var(--dark-blue) !important;
 }
 </style>

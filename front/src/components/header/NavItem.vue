@@ -6,17 +6,20 @@ const props = defineProps({
     indicator:{
         required: false,
         type: Boolean
-    }
+    },
+    idElement:String
 })
 </script>
 
 <template> 
-    <div :class="['button__wrapper', {'button-indicator':indicator}]">   
-        <div class="nav__button">        
-            <div class="button__name">{{name}}</div>
-            <div :class="['button__indicator', {'button__on': indicator}]"></div>
+    <a :href="'#'+idElement">
+        <div :class="['button__wrapper', {'button-indicator':indicator}]">
+            <div class="nav__button">
+                <div class="button__name">{{name}}</div>
+                <div :class="['button__indicator', {'button__on': indicator}]"></div>
+            </div>
         </div>
-    </div>
+    </a>
 </template>
 
 <style scoped>
@@ -47,7 +50,7 @@ const props = defineProps({
 
 .button__name{
     font-size: 13pt;
-    color: var(--dark);
+    color: var(--blue-dark);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;

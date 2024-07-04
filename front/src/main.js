@@ -11,10 +11,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faWhatsapp, faTelegram, faPhone)
+library.add(faWhatsapp, faTelegram, faPhone, faFacebook)
 
 createApp(App)
   .component('font-awesome-icon', FontAwesomeIcon)

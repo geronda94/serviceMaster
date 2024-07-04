@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="silver-border">
+    <div class="silver-border header__el" >
         <div class="logo__wrapper ">
             <p class="logo__text">Master Servis</p>
         </div>

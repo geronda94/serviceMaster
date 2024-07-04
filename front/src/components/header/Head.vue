@@ -28,6 +28,7 @@ import Navigation from './Navigation.vue'
     padding-bottom:3px;
     border-radius: 30%;
     background: var(--light);
+    z-index: 1000;
 }
 .header__border{
     display: flex;

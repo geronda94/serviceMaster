@@ -140,9 +140,11 @@ a {
     --light:#eaeaea;
     --text-shadow: rgba(237, 237, 237, 0.5);
     --silver-gradient: linear-gradient(135deg, #f7f7f7, #b7b7b7, #f7f7f7);
-    --background-gradient: linear-gradient(135deg, #141e30, #243b55);
-    --dark-blue: #141e30;
-    --light-blue: #243b55;
+    --background-gradient: linear-gradient(135deg, #192b4d, #082c58);
+    --dark-blue: #192b4d;
+    --dark-blue2: #141e30;
+    --light-blue: #082c58;
+    --light-blue2: #243b55;
   }
   
 
@@ -158,9 +160,12 @@ a {
 
 .section__wrapper{
 
-    padding: 10px 30px;
+    padding: 10px 0;
 }
 
+.header__el{
+    width: 30%;
+}
 
 
 

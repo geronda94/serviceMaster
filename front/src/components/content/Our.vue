@@ -4,7 +4,7 @@
 
 </script>
 <template>
-    <div class="wrapper__main section__wrapper">
+    <div id="our" class="wrapper__main section__wrapper">
         <div class="block__title">
             Ремонт посудомоечных и стиральных машин
         </div>
@@ -24,7 +24,7 @@
                 
             </div>
 
-            <img class="us__img" src="/img/worker.png" alt="">
+            <img class="us__img" src="/img/worker.jpg" alt="">
 
             <div class="description__block">
                 <div class="desc__item">
@@ -40,9 +40,17 @@
         </div>
 
         <div class="long__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsa consequuntur eum, assumenda ad et ab autem fugit voluptates! Officia maiores earum ad laborum aperiam quis alias vel mollitia quaerat, asperiores veritatis quos eos tempora corporis accusantium, aliquid odit vero velit fugiat sed similique accusamus sint. Rem voluptates, nihil mollitia assumenda nesciunt facilis soluta accusantium placeat natus distinctio ea non iusto, deleniti dolores? Doloribus cupiditate unde delectus eius. Deleniti impedit facilis, dolore assumenda optio incidunt cumque temporibus deserunt vel minus, neque ea et, consequatur dignissimos. Harum vel illum ipsa beatae perspiciatis autem nobis. Commodi impedit magni deleniti minima corrupti rerum harum, quos, placeat quasi et consectetur neque voluptate exercitationem hic excepturi! Eaque, ipsum. Tenetur ab modi perspiciatis deserunt eligendi odit blanditiis fugiat totam, reprehenderit laborum mollitia molestiae velit consequatur? Delectus consequatur perferendis, et quidem nesciunt doloribus earum maxime voluptate assumenda, iure neque deserunt ipsa distinctio, illo unde porro numquam architecto saepe quae beatae! Assumenda saepe illo a laudantium expedita dicta voluptatum sunt, perspiciatis earum veritatis voluptatibus doloremque aliquid quisquam enim natus, unde cum. Dolorum expedita laboriosam ut aperiam tenetur alias voluptates aut tempora. Neque, inventore repellat facere, aspernatur aliquid recusandae pariatur, accusamus veritatis reprehenderit aut obcaecati laboriosam eligendi corrupti? Soluta.
+            Стиральная машина – часть нашей жизни
+
+            Стабильная работа стиральной машины – ее главное преимущество, так как она рассчитана на ежедневное использование.
+
+            Когда стиральная машина ломается, сегодня это настоящая проблема: из-за быстрого темпа жизни у людей нет времени и сил стирать одежду вручную, как это было 50 или 100 лет назад.
+
+            К счастью для вас, в наше время из этой ситуации очень легко выйти.
+
+            Не нужно изобретать стиральную машину, достаточно обратиться за помощью к мастеру, это дешевле, чем покупать новую стиральную машину.        
         </div>
-        
+                    
     </div>
 </template>
 <style scoped>
@@ -63,8 +71,8 @@
 
 
 .us__img {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
 }
 
@@ -77,13 +85,15 @@
     
 }
 
+
 .description__block p {
     /* background-color: rgba(240, 240, 240, 0.2); */
 
-    font-size: 16pt;
+    font-size: 17pt;
     letter-spacing: 2px;
     text-align: center;
     font-weight: 500;
+    line-height: 18pt;
 }
 
 .long__description{
@@ -91,7 +101,21 @@
     width: 80%;
     margin-bottom:50px;
     margin-top: 50px;
-    font-size: 14pt;
+    font-size: 16pt;
+    line-height: 18pt;
+}
+
+.desc__item{
+    display: flex;
+    justify-content: center;
+}
+
+.desc__left, .desc__right{
+    border:1px solid white;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: rgba(242, 242, 242, .1);
 }
 
 </style>
