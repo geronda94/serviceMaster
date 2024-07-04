@@ -7,9 +7,9 @@
 </script>
 
 <template>
-    <div id="review" class="review wrapper__price section__wrapper">
+    <div id="review" class="review wrapper__price section__wrapper section__light-wrapper">
         <div class="block__title title__light">
-            Цены на наши услуги
+            Отзывы наших клиентов
         </div>
     </div>
 </template>

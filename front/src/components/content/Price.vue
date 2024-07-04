@@ -27,7 +27,7 @@ const prices = [
 </script>
 
 <template>
-    <div id="price" class="wrapper__price section__wrapper">
+    <div id="price" class="wrapper__price section__wrapper section__light-wrapper">
         <div class="block__title title__light">
             Цены на наши услуги
         </div>
@@ -43,16 +43,8 @@ const prices = [
     </div>
 </template>
 <style scoped>
-.wrapper__price {
-    margin: 30px 0;
-    border-top: 5px dashed var(--light-blue);
-    position: relative;
-    color: var(--dark-blue);
-}
 
-.title__light {
-    color: var(--dark-blue);
-}
+
 
 .price__wrapper {
     margin-top: 50px;
