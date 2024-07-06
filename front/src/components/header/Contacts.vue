@@ -4,7 +4,7 @@
 
 <template>
     
-        <ul class="contacts header__el" >
+        <ul class="contacts" >
             <li>
                 <a href="https://wa.me/+995557256175" class="contact__link" target="_blank">
                     <font-awesome-icon :icon="['fab', 'whatsapp']" />

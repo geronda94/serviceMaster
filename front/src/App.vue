@@ -11,7 +11,7 @@ import Reviews from './components/content/Reviews.vue'
 <main>
     <Our/>
     <Price/>
-    <Reviews/>
+    <!-- <Reviews/> -->
 </main>
 
 </template>

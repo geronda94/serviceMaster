@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template> 
-    <a :href="'#'+idElement">
+    <a class="nav-link" :href="'#'+idElement">
         <div :class="['button__wrapper', {'button-indicator':indicator}]">
             <div class="nav__button">
                 <div class="button__name">{{name}}</div>
@@ -75,4 +75,18 @@ const props = defineProps({
 /* .button__indicator:hover {
     box-shadow: 0 0 20px rgba(63, 255, 63, 0.8), 0 0 40px rgba(63, 255, 63, 0.6); 
 } */
+
+@media(max-width:1050px){
+    .button__wrapper{
+        height: 36px;
+    }
+    .nav__button{
+        
+        padding: 2px 9px;
+        height: 32px;
+    }
+    .button__name{
+        font-size: 11pt !important;
+    }
+}
 </style>
