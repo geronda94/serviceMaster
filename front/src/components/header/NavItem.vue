@@ -22,7 +22,7 @@ const props = defineProps({
     </a>
 </template>
 
-<style scoped>
+<style >
 .button__wrapper{
     background: var(--silver-gradient);
     padding: 1.5px;
@@ -86,7 +86,7 @@ const props = defineProps({
         height: 32px;
     }
     .button__name{
-        font-size: 11pt !important;
+        font-size: 11pt ;
     }
 }
 </style>

@@ -30,7 +30,7 @@
 </template>
 
 
-<style scoped>
+<style>
 
 
 .contacts{

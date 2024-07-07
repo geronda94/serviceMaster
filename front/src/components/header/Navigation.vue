@@ -8,9 +8,11 @@ const activateItem = (nm) => {
 };
 
 const activeNav = ref(false)
-const menuItems = [ {name:"О нас", id:"our"},
-                     {name:'Цены', id:"price"}, 
-                     {name:'Отзывы', id: "review"} ];
+const menuItems = [ 
+                    {name:"О нас", id:"our"},
+                    {name:'Цены', id:"price"}, 
+                    {name:'Отзывы', id: "review"},
+                  ];
 
 
 

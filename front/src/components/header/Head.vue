@@ -16,7 +16,6 @@ const windWidth = ref()
 
 function updateScreenSize() {
             windWidth.value = window.innerWidth;
-            console.log(windWidth.value)
         }
 
         updateScreenSize();
@@ -33,7 +32,8 @@ function updateScreenSize() {
         <Logo class="header__log header__el"/>
         <Contacts class="header__contacts header__el"/>
     </div>
-    <div class="header__border" v-else>
+    
+    <div v-else class="header__border" >
         <Logo class="header__log header__el  logo__el"/>
         <div class="mob__nav">
             <Navigation class="header__nav header__el"/>
@@ -46,14 +46,14 @@ function updateScreenSize() {
     
 </template>
 
-<style scoped>
+<style>
 
 .header{
     position: fixed;
     width: 100%;
     padding-bottom:3px;
-    border-radius: 30%;
-    background: var(--light);
+    border-radius: 20%;
+    background: var(--dark);
     z-index: 1000;
 }
 .header__border{
@@ -61,7 +61,7 @@ function updateScreenSize() {
     justify-content: space-between;
     align-items: center;
     padding: 10px 45px;
-    border-bottom: 3px solid var(--light);
+    border-bottom: 3px solid var(--dark);
     
     background:white;
     
@@ -78,7 +78,7 @@ function updateScreenSize() {
 @media(max-width:980px){
     .header__border{
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     .header__el{
@@ -86,7 +86,7 @@ function updateScreenSize() {
         min-width: 10%;
     }
     .logo__el{
-        width: 100%;
+        width: 40%;
     }
     .mob__nav {
         width: 100%;
@@ -101,6 +101,52 @@ function updateScreenSize() {
         order: 1; /* Логотип будет вторым */
     }
 
+    .header__border{
+        padding: 5px 20px;
+        gap: 10px;
+    }
 
+}
+
+@media(max-width:660px){
+    .logo__el{
+        width: 70%;
+    }
+
+    
+}
+
+
+@media(max-width:480px){
+    .nav__button{
+        padding: 2px 6px;
+        height: 28px;
+    }
+    .button__wrapper{
+        height: 33px;
+    }
+    .button__name {
+        font-size: 9pt !important;
+    }
+
+    .contact__link{
+        font-style: 13pt !important;
+    }
+    .header__border{
+        padding: 10px 5px;
+    }
+    .mob__nav{
+        gap: 4px;
+    }
+
+    .logo__wrapper{
+        padding: 10px;
+    }
+    .contacts{
+        gap:8px;
+    }
+    .navigation__menu{
+        gap: 5px !important;
+    }
 }
 </style>
