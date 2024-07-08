@@ -99,8 +99,8 @@
     font-size: 17pt;
     letter-spacing: 2px;
     text-align: center;
-    font-weight: 500;
-    line-height: 18pt;
+    line-height: 19pt;
+    letter-spacing: 1px;
 }
 
 .long__description{

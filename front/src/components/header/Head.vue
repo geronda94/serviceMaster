@@ -1,6 +1,6 @@
 <script setup>
 
-import {provide,  ref } from "vue";
+import {provide, inject, ref } from "vue";
 import Contacts from "./Contacts.vue";
 import Logo from "./Logo.vue";
 import Navigation from './Navigation.vue'
@@ -11,15 +11,11 @@ const activatedNav = ref(false)
 provide('activatedNav', activatedNav)
 
 
+const windWidth = inject('windWidth')
 
-const windWidth = ref()
 
-function updateScreenSize() {
-            windWidth.value = window.innerWidth;
-        }
 
-        updateScreenSize();
-        window.addEventListener('resize', updateScreenSize);
+
 
 </script>
 
