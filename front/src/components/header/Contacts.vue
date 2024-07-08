@@ -43,4 +43,11 @@
     font-size: 15pt;
     color: var(--dark-blue) !important;
 }
+@media (max-width:550px) {
+    .contacts{
+        max-width: 35% !important;
+        justify-content: center;        
+    }
+    
+}
 </style>

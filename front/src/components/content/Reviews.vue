@@ -9,7 +9,7 @@
 <template>
     <div id="review" class="review wrapper__price section__wrapper section__light-wrapper">
         <div class="block__title title__light">
-            Отзывы наших клиентов
+            <h1>Отзывы наших клиентов</h1>
         </div>
         <div class="review__wrapper">
             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02NfQpVenyAchNLS7KhqeBFyjES3neCCGVTpLEFKNxXEHppcLzgDFTc5az1Rb2jJPvl%26id%3D100009310597158&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
     gap: 0px;
 }
 .review__item{

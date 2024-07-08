@@ -150,16 +150,18 @@ a {
 
 
 
-.block__title{
+.block__title h1{
     padding-top:30px;
     margin:  auto;
     text-align: center;
     font-size: 27pt;
     color: white;
+    font-weight: 500;
+    width: 90%;
 }
 
-.title__light {
-    color: var(--dark-blue);
+.title__light h1 {
+    color: var(--dark-blue) !important;
 }
 
 .section__wrapper{
@@ -173,7 +175,11 @@ a {
     color: var(--dark-blue);
 }
 
-
+@media(max-width:435px){
+    .block__title h1{
+        font-size: 25pt;
+    }
+}
 
 
 

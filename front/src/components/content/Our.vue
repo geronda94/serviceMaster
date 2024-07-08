@@ -6,7 +6,7 @@
 <template>
     <div id="our" class="wrapper__main section__wrapper">
         <div class="block__title">
-            Ремонт посудомоечных и стиральных машин
+            <h1>Ремонт посудомоечных и стиральных машин</h1>
         </div>
 
 
@@ -16,10 +16,10 @@
                     <p class="desc__right">Работаем в Тбилиси и окрестностях.</p>
                 </div>
                 <div class="desc__item">
-                    <p class="desc__left">На рынке более 10 лет.</p>
+                    <p class="desc__left">Высокая квалификация.</p>
                 </div>
                 <div class="desc__item">
-                    <p class="desc__right">Высокая квалификация и качество обслуживания.</p>
+                    <p class="desc__right">Ремонтируем более 10 лет.</p>
                 </div>
                 
             </div>
@@ -28,28 +28,29 @@
 
             <div class="description__block">
                 <div class="desc__item">
-                    <p class="desc__left">Точная диагностика и эффективное решение.</p>
+                    <p class="desc__left">Точная диагностика и решение.</p>
                 </div>
                 <div class="desc__item">
                     <p class="desc__right">Приемлемые цены.</p>
                 </div>
                 <div class="desc__item">
-                    <p class="desc__left">Быстро и ответственно решаем задачи!</p>
+                    <p class="desc__left">Быстро решаем задачи!</p>
                 </div>
             </div>
         </div>
 
         <div class="long__description">
-            Стиральная машина – часть нашей жизни
+    <p>Я занимаюсь ремонтом стиральных машин в Тбилиси уже более 10 лет. Мой профессионализм поможет решить любую проблему с вашей стиральной машиной.</p>
 
-            Стабильная работа стиральной машины – ее главное преимущество, так как она рассчитана на ежедневное использование.
+    <p>Если ваша стиральная машина не сливает воду, не отжимает белье или издает посторонние шумы, не медлите – обращайтесь ко мне, пока дискомфорт не стал серьезной проблемой. Я понимаю, как важно, чтобы ваша помощница работала без перебоев, и готов быстро прийти на помощь.</p>
 
-            Когда стиральная машина ломается, сегодня это настоящая проблема: из-за быстрого темпа жизни у людей нет времени и сил стирать одежду вручную, как это было 50 или 100 лет назад.
+    <p>Диагностика занимает всего 15 минут и не требует разбора машины. В зависимости от сложности поломки, ремонт может занять от 30 минут до 2 часов. Я ценю ваше время и стремлюсь вернуть вашу машинку в строй как можно скорее.</p>
 
-            К счастью для вас, в наше время из этой ситуации очень легко выйти.
+    <p>За время работы я успешно отремонтировал более 4 тысяч стиральных машин различных марок и моделей. Мой опыт позволяет мне быстро и качественно устранить любые неисправности.</p>
 
-            Не нужно изобретать стиральную машину, достаточно обратиться за помощью к мастеру, это дешевле, чем покупать новую стиральную машину.        
-        </div>
+    <p>Не ждите, пока проблема станет серьёзной! Обратитесь к профессионалу уже сегодня и убедитесь в моем профессионализме и надёжности. Я гарантирую, что быстро верну вашу стиральную машину к жизни, чтобы вы могли снова наслаждаться чистотой и комфортом вашего дома.</p>
+</div>
+
                     
     </div>
 </template>
@@ -58,21 +59,23 @@
     background: var(--background-gradient);
     color: white;
     padding-top: 140px;
+    
 }
 
 .description__wrapper{
     display: flex;
     margin-top: 70px;
     margin-bottom: 50px;
-    gap: 40px;
+    gap: 25px;
     justify-content: center
 }
 
 
 
 .us__img {
-    width: 320px;
-    height: 320px;
+    min-width: 25%;
+    max-width: 30%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -80,11 +83,15 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 30px;
     
 }
 
+.long__description p{
+    margin:15px 5px;
+    font-size: 17pt;
+}
 
 .description__block p {
     /* background-color: rgba(240, 240, 240, 0.2); */
@@ -117,5 +124,72 @@
     border-radius: 10px;
     background: rgba(242, 242, 242, .1);
 }
+
+
+@media(max-width:940px){
+    .description__wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        height: 100%;
+        gap: 40px;
+        padding: 0 5px;
+    }
+
+    .description__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        min-height: 70px;
+        
+    }
+
+    .description__block p{
+        font-size: 15pt;
+        line-height: 16pt;
+    }
+
+    .desc__item{
+        display: block;
+        max-width: 30%;
+        min-width: 20%;
+        height: 100%;
+    }
+
+    .desc__item p{
+        display: block;
+        height: 100%;
+    }
+
+    .us__img{
+        min-width: 70%;
+        max-width: 80%;
+    }
+}
+
+@media (max-width:720px) {
+    .long__description{
+        width: 90%;
+    }
+}
+
+@media(max-width:610px){
+    .description__block{
+        flex-direction: column;
+        min-height: auto;
+        width: 100%;
+    }
+    .desc__item{
+        max-width: none;
+        font-size: 17pt;
+        line-height: 17pt;
+    }
+
+    
+}
+
 
 </style>

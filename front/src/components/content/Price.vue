@@ -29,7 +29,7 @@ const prices = [
 <template>
     <div id="price" class="wrapper__price section__wrapper section__light-wrapper">
         <div class="block__title title__light">
-            Цены на наши услуги
+            <h1>Цены на наши услуги</h1>
         </div>
         <div class="price__wrapper">
             <div class="price__block">
@@ -44,7 +44,9 @@ const prices = [
 </template>
 <style scoped>
 
-
+.price__name{
+    padding: 5px;
+}
 
 .price__wrapper {
     margin-top: 50px;
@@ -79,9 +81,26 @@ const prices = [
 .price__line {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 18pt;
     margin: 10px;
     font-weight: 400;
     border-bottom: 1px solid var(--light-blue);
 }
+
+@media(max-width:640px){
+    .price__block{
+        width: 95%;
+        padding: 15px 5px;
+    }
+    .price__line{
+        font-size: 16pt;
+
+    }
+    .price__name{
+        width: 60%;
+        
+    }
+}
+@media(max-width:450px){}
 </style>
