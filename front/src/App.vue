@@ -17,6 +17,9 @@ function updateScreenSize() {
         window.addEventListener('resize', updateScreenSize);
 
 provide('windWidth', windWidth)
+
+const lang = ref("")
+provide("lang", lang)
 </script>
 
 <template>

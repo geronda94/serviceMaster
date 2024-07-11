@@ -4,6 +4,8 @@ import {provide, inject, ref } from "vue";
 import Contacts from "./Contacts.vue";
 import Logo from "./Logo.vue";
 import Navigation from './Navigation.vue'
+import LangIcon from "./LangIcon.vue";
+
 
 const navActive = ref(true)
 
@@ -27,6 +29,7 @@ const windWidth = inject('windWidth')
         <Navigation class="header__nav header__el"/>
         <Logo class="header__log header__el"/>
         <Contacts class="header__contacts header__el"/>
+        <LangIcon/>
     </div>
     
     <div v-else class="header__border" >
@@ -35,7 +38,9 @@ const windWidth = inject('windWidth')
             <Navigation class="header__nav header__el"/>
             <Contacts class="header__contacts header__el"/>
         </div>
+        <LangIcon/>
     </div>
+
     
 </header>
 
@@ -58,7 +63,7 @@ const windWidth = inject('windWidth')
     align-items: center;
     padding: 10px 45px;
     border-bottom: 3px solid var(--dark);
-    
+    position:relative;
     background:white;
     
 }
