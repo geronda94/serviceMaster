@@ -18,7 +18,7 @@ function updateScreenSize() {
 
 provide('windWidth', windWidth)
 
-const lang = ref("")
+const lang = ref("ru")
 provide("lang", lang)
 </script>
 

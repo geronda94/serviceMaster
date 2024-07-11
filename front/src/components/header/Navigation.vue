@@ -1,29 +1,36 @@
 <script setup>
 import NavItem from "./NavItem.vue";
-import { inject,  ref } from "vue";
+import { inject, ref, computed } from "vue";
 
-const activeItem = inject( 'activatedNav')
+const activeItem = inject('activatedNav');
+const lang = inject('lang');
+
 const activateItem = (nm) => {
   activeItem.value = nm;
 };
 
-const activeNav = ref(false)
-const menuItems = [ 
-                    {name:"О нас", id:"our"},
-                    {name:'Цены', id:"price"}, 
-                    {name:'Отзывы', id: "review"},
-                  ];
+const activeNav = ref(false);
 
+const menuContent = {
+  ru: [
+    { name: "О нас", id: "our" },
+    { name: "Цены", id: "price" },
+    { name: "Отзывы", id: "review" },
+  ],
+  ge: [
+        { name: "ჩვენზე", id: "our" },
+        { name: "ფასი", id: "price" },
+        { name: "მიმოხილვა", id: "review" },
+      ]
+};
 
-
-
-
+const menuItems = computed(() => menuContent[lang.value]);
 </script>
 
 <template>
-  <nav >
+  <nav>
     <ul class="navigation__menu">
-      <li v-for="item of menuItems" :key="item.name">
+      <li v-for="item of menuItems" :key="item.id">
         <NavItem
           @click="activateItem(item.name)"
           :name="item.name"

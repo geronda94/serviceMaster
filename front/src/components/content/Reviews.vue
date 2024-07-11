@@ -3,6 +3,17 @@ import { ref, inject, watch, onMounted } from 'vue';
 import RewItem from './RewItem.vue';
 
 
+const lang = inject('lang')
+
+const componentContent = {
+    ru:{
+        title:'Отзывы наших клиентов'
+    },
+    ge:{
+        title:'ჩვენი კლიენტების მიმოხილვები'
+    }
+}
+
 const windWidth = inject('windWidth')
 const reviews = [
     {
@@ -69,7 +80,7 @@ onMounted(() => {
 <template>
     <div id="review" class="review wrapper__price section__wrapper section__light-wrapper">
         <div class="block__title title__light">
-            <h1>Отзывы наших клиентов</h1>
+            <h1>{{componentContent[lang].title}}</h1>
         </div>
         <!-- <div class="review__wrapper">
             <iframe v-for="rev in reviews" :key="rev" 

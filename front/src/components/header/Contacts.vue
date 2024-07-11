@@ -11,7 +11,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://t.me/+995557256175" class="contact__link" target="_blank">
+                <a href="https://t.me/+995522222742" class="contact__link" target="_blank">
                     <font-awesome-icon :icon="['fab', 'telegram']" />
                 </a>
             </li>
@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="tel:+995557256175" class="contact__link" target="_blank">
+                <a href="tel:+995522222742" class="contact__link" target="_blank">
                     <font-awesome-icon icon="fa-solid fa-phone" />
                 </a>
             </li>
@@ -40,13 +40,14 @@
 }
 
 .contact__link{
-    font-size: 15pt;
+    font-size: 18pt;
     color: var(--dark-blue) !important;
 }
 @media (max-width:550px) {
     .contacts{
         max-width: 35% !important;
-        justify-content: center;        
+        justify-content: center;
+        gap: 20px; 
     }
     
 }
