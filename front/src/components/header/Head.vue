@@ -31,7 +31,7 @@ provide("activatedNav", activatedNav);
   <header class="header">
     <div v-if="windWidth > 980" class="header__border">
       <Navigation class="header__nav header__el" />
-      <Logo v-if="showLogo" class="header__log header__el" />
+      <Logo class="header__log header__el" />
       <Contacts class="header__contacts header__el" />
     </div>
 
