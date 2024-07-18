@@ -113,7 +113,8 @@ provide("activatedNav", activatedNav);
     width: 70%;
   }
   .mob__nav{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 10px;
     width: 100%;
   }
   .header__el{

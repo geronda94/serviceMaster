@@ -6,7 +6,7 @@
     
         <ul class="contacts" >
             <li>
-                <a href="tel:+995522222742" class="contact__link phone__number" target="_blank">557 25 61 75</a>
+                <a href="tel:+99557256175" class="contact__link phone__number" target="_blank">557 25 61 75</a>
             </li>
             <li>
                 <a href="https://wa.me/+99557256175" class="contact__link" target="_blank">
@@ -40,7 +40,7 @@
 
 .contacts{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: flex-end;
 }
 
