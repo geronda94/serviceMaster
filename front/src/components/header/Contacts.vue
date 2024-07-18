@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="tel:+995522222742" class="contact__link" target="_blank">
+                <a href="tel:+99557256175" class="contact__link" target="_blank">
                     <font-awesome-icon icon="fa-solid fa-phone" />
                 </a>
             </li>
