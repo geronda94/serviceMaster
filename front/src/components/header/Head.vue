@@ -112,6 +112,19 @@ provide("activatedNav", activatedNav);
   .logo__el {
     width: 70%;
   }
+  .mob__nav{
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__el{
+    max-width: 100%;
+  }
+
+
+  .contact__link {
+    max-width: 100%;
+    
+  }
 }
 
 @media (max-width: 480px) {
